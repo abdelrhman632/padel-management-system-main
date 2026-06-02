@@ -10,7 +10,7 @@ WORKDIR /app
 
 COPY --from=build /app/publish .
 
+ENV ASPNETCORE_URLS=http://0.0.0.0:${PORT}
 EXPOSE 8080
-ENV ASPNETCORE_URLS=http://+:8080
 
 ENTRYPOINT ["dotnet", "PadelBackend.dll"]
