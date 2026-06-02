@@ -1,0 +1,29 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.rsuser
+
+# VS Code
+.vscode/
+
+# Secrets / environment
+.env
+appsettings.Development.json
+
+# Node / Frontend later
+node_modules/
+.next/
+dist/
+build/
+
+# Python / AI later
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db

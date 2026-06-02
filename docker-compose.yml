@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15
+    container_name: padel-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: PadelBackend123!
+      POSTGRES_DB: PadelDb
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
